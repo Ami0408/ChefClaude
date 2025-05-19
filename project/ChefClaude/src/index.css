@@ -1,0 +1,84 @@
+.header{
+ color: black;
+ font-family: Inter,'sans-serif';
+ font-weight: 350;
+ display: flex;
+ justify-content: center;
+ box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.1),0px 1px 2px 0px rgba(0,0,0,0.05);
+ border-radius: 20px;
+ gap: 10px;
+}
+
+.chef-logo{
+ height: 35px;
+ width: 20px;
+ display: flex;
+ justify-content: center;
+ margin-top: 12px;
+ margin-bottom: 12px;
+}
+.submit-botton{
+ background-color: black;
+ color: white;
+ font-family: Inter,'sans-serif';
+ }
+.input-ingredient{
+ height: 20px;
+}
+.form{
+ margin: 40px 15px 15px 0px;
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+ 
+}
+input{
+ border-radius: 6px; 
+ border: 1px solid #D1D5D8;
+ padding: 9px 13px;
+ box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+ flex-grow: 1;
+ min-width: 150px;
+ max-width: 400px;
+ 
+}
+button{
+ font-family: Inter,'sans-serif';
+ border-radius: 10px;
+ background-color: #141413;
+ color: white;
+}
+
+ 
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #F0EFEB;
+    padding: 10px 28px;
+}
+
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+
+.get-recipe-container button {
+    border: none;
+    border-radius: 6px;
+    background: #D17557;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    padding: 9px 17px;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
