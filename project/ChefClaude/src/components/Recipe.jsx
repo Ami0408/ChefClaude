@@ -5,7 +5,7 @@ export default function Recipe ({ generated }){
   return(
     <section>
       <h2> Chef Claude Recommends </h2>
-      {generated} 
+      <Markdown>{generated}</Markdown>  
     </section>
   );
 }
