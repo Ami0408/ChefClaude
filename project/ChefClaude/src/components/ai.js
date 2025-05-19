@@ -13,7 +13,7 @@ export async function getRecipeFromHuggingFace(ingredients) {
   const client = new InferenceClient(HUGGINGFACE_API_KEY);
 
   try {
-    const prompt = `Generate a recipe using the following ingredients: ${ingredients.join(', ')} in  markdown format`;
+    const prompt = `Generate a recipe using the following ingredients: ${ingredients.join(', ')} in  markdown format without your internal thoughts or monologue`;
     const chatCompletion = await client.chatCompletion({
       provider: "fireworks-ai",
       model: "deepseek-ai/DeepSeek-R1",
