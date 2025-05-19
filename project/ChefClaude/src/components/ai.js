@@ -2,7 +2,7 @@
 import { InferenceClient } from "@huggingface/inference";
 
 // Ensure you have your API key stored securely (e.g., environment variable)
-const HUGGINGFACE_API_KEY = "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";
+const HUGGINGFACE_API_KEY = import.meta.env.VITE_API;
 
 export async function getRecipeFromHuggingFace(ingredients) {
   if (!HUGGINGFACE_API_KEY) {
