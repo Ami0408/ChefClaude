@@ -1,11 +1,11 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'react-markdown'
 
 export default function Recipe ({ generated }){
   return(
     <section>
       <h2> Chef Claude Recommends </h2>
-      <ReactMarkdown> { generated } </ReactMarkdown>
+      <Markdown> {generated} </Markdown>
     </section>
   );
 }
