@@ -13,7 +13,7 @@ export async function getRecipeFromHuggingFace(ingredients) {
   const client = new InferenceClient(HUGGINGFACE_API_KEY);
 
   try {
-    const prompt = `Generate a recipe using the following ingredients: ${ingredients.join(', ')} in  markdown format When generating the recipe, please omit any text that describes your thought process or internal reasoning. Just provide the final recipe.`;
+    const prompt = `Generate a recipe using the following ingredients: ${ingredients.join(', ')}.`;
     const chatCompletion = await client.chatCompletion({
       provider: "together",
       model: "mistralai/Mistral-7B-Instruct-v0.3",

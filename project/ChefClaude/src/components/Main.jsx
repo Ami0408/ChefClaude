@@ -22,6 +22,7 @@ export default function Main() {
     const newIngredient = formData.get('Ingredient');
     if (newIngredient && !ingredients.includes(newIngredient.trim())) {
       setIngredients((prevIngredients) => [...prevIngredients, newIngredient.trim()]);
+    event.currentTarget.reset();
     }
   }
 
@@ -35,7 +36,7 @@ export default function Main() {
           className="input-ingredient"
           name="Ingredient"
         />
-        <button type="submit">Add Ingredient</button>
+        <button type="submit" className ="add">Add Ingredient</button>
       </form>
       <section>
         <Ingredient
