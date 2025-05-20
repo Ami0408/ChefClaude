@@ -15,8 +15,8 @@ export async function getRecipeFromHuggingFace(ingredients) {
   try {
     const prompt = `Generate a recipe using the following ingredients: ${ingredients.join(', ')} in  markdown format When generating the recipe, please omit any text that describes your thought process or internal reasoning. Just provide the final recipe.`;
     const chatCompletion = await client.chatCompletion({
-      provider: "fireworks-ai",
-      model: "deepseek-ai/DeepSeek-R1",
+      provider: "together",
+      model: "mistralai/Mistral-7B-Instruct-v0.3",
       messages: [
         {
           role: "user",
